@@ -1,0 +1,517 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Roboto', sans-serif; */
+  letter-spacing: 1px;
+  
+}
+::-webkit-scrollbar { /** WebKit */
+  display: none;
+}
+body{
+  background-color: #FCFCFC;
+  
+}
+
+.navbar{
+  height: 50px;
+  background-color: #FFFFFF;
+  border: 1px solid #8b8b8b;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+.logo{
+  height: 40px;
+  width: 150px;
+  position: absolute;
+  top:5px;
+  left:10px;
+  background-color: #efefef;
+  color: #707070;
+}
+.logo p{
+  position: relative;
+  text-align: center;
+  top:7px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.reg_button{
+  position: absolute;
+  float: right;
+  height: 40px;
+  width: 150px;
+  position: relative;
+  top:5px;
+  right:10px;
+  background-color: #6AA478;
+}
+.reg_button p{
+  position: relative;
+  text-align: center;
+  top:10px;
+  font-size:14px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+
+}
+/* End Of NAVBAR */
+.wrapper{
+  height: calc(100% - 50px);
+  position:relative;
+  top:50px;
+  width: 100%;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.location_bloc{
+  position: relative;
+  height: auto;
+  width: 80%;
+  margin-top: 30px;
+  left:10%;
+}
+.location{
+  position: relative;
+  height: 40px;
+  width: 80%;
+  margin-top: 30px;
+  border: 1px solid #8b8b8b;
+}
+.icon{
+  position: relative;
+  float: left;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+.icon i{
+  position: relative;
+  top: 10px;
+}
+.location_input{
+  position: relative;
+  float: left;
+  height: 40px;
+  width: calc(100% - 50px);
+  position: relative;
+  left: 10px;
+  background-color: #FFFFFF;
+  
+}
+.location_input input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline:none;
+  background-color: #FFFFFF;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+.location_bloc h3{
+  margin-top: 20px;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.place_bloc{
+  margin-top: 15px;
+  width: 80%;
+  height: auto;
+  /* display: none; */
+}
+.place_bloc select{
+  width: calc(40% - 20px);
+  margin-right:10px;
+  height: 40px;
+  background-color: #FFFFFF;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+
+}
+
+.place_bloc input[type="button"]{
+  width: 20%;
+  height: 40px;
+  background-color: #6AA478;
+  border: none;
+  outline:none;
+  font-size: 14px;
+  font-weight: bold;
+  font-size:14px;
+  color: #FFFFFF;
+  font-family: Helvetica, sans-serif;
+}
+.filters_bloc{
+  height: 75px;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+.filter_float_left{
+  position: relative;
+  text-align: center;
+  top: 10px;
+  height: 40px;
+  width: auto;
+  float: left;
+  margin-right: 20px;
+  flex-shrink: 0;
+  border: 1px solid #8b8b8b;
+  border-radius:20px;
+  color: #8b8b8b;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+.filter_float_left p{
+  position: relative;
+  top:11px;
+  
+}
+.filters_bloc {
+  scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+}
+
+.calender_bloc{
+  margin-top: 15px;
+  height: auto;
+  width: 100%;
+  min-height: 50px;
+  
+}
+.search{
+  width: calc(40% - 120px);
+  height: 40px;
+  border: 1px solid #8b8b8b;
+  float: left;
+  margin-right: 10px;
+  background-color: #FFFFFF;
+
+}
+
+.search_input{
+  width: calc(100% - 50px);
+  height: 40px;
+  float: left;
+  background-color: #FFFFFF;
+
+}
+.search_input_date{
+  width: 100%;
+  height: 40px;
+  float: left;
+  background-color: #FFFFFF;
+}
+.search_input input{
+  width: 100%;
+  height: 40px;
+  float: left;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+.search_input_date input{
+  width: 100%;
+  height: 40px;
+  float: left;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+.search_icon{
+ width: 30px;
+  height: 40px;
+  float: left;
+  text-align: center;
+}
+.search_icon i{
+  position: relative;
+  top: 10px;
+}
+.show_map_radio{
+  float: left;
+  margin-left: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.show_map_radio p{
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+/* toggle in label designing */
+
+.maptoggle {
+  position : relative ;
+  display : inline-block;
+  width : 30px;
+  height : 7px;
+  background-color: gray;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+      
+/* After slide changes */
+.maptoggle:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  top: -7px; 
+  left: -2px;
+  transition:  all 0.5s;
+}
+      
+   
+/* Checkbox cheked effect */
+.mapcheckbox:checked + .maptoggle::after {
+  left : 10px; 
+  background-color: #4a9905;
+}
+      
+/* Checkbox cheked toggle label bg color */
+.mapcheckbox:checked + .maptoggle {
+  background-color: green;
+}
+      
+/* Checkbox vanished */
+.mapcheckbox { 
+  display : none;
+}
+.hidetoggle {
+  position : relative ;
+  display : inline-block;
+  width : 30px;
+  height : 7px;
+  background-color: gray;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+      
+/* After slide changes */
+.hidetoggle:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  top: -7px; 
+  left: -2px;
+  transition:  all 0.5s;
+}
+      
+   
+/* Checkbox cheked effect */
+.hidecheckbox:checked + .hidetoggle::after {
+  left : 10px; 
+  background-color: #4a9905;
+}
+      
+/* Checkbox cheked toggle label bg color */
+.hidecheckbox:checked + .hidetoggle {
+  background-color: green;
+}
+      
+/* Checkbox vanished */
+.hidecheckbox { 
+  display : none;
+}
+.appointment_bloc{
+  height: auto;
+  width: 100%;
+
+}
+.slots_bloc{
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-top:20px ;
+}
+.maps_bloc{
+  float: left;
+  width: 100%;
+  background-color: gray;
+  height: 300px;
+
+}
+.No_Slot{
+  width: 100%;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.slot{
+  height: 250px;
+  width: calc(33% - 30px);
+  box-shadow: 0px 4px 4px 0px rgba(65, 62, 62, 0.3);
+  float: left;
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #6AA478;
+}
+.slot_details{
+  height: calc(100% - 70px);
+  width: 100%;
+
+}
+.slot_button{
+  height: 52px;
+  background-color: #6AA478;
+  border-radius: 0px 0px 10px 10px ;
+  text-align: center;
+}
+.slot_button p{ 
+ color: #efefef;
+ font-weight: bold;
+ position: relative;
+ top:15px ;
+ font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.slot_details h3{
+  position: relative;
+  left: 10px;
+  margin-bottom: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.slot_details p{
+  position: relative;
+  left: 10px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  
+}
+.slot_details p i{
+  margin-right: 10px;
+}
+.age{
+  background-color: #C9C9C9;
+  padding: 5px;
+  margin-right: 10px;
+  color: #535050;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  
+}
+.sav{
+  color: #6AA478;
+  font-weight: bold;
+}
+.vad span{
+  font-weight: bold;
+}
+@media only screen and (max-width: 1110px){
+  .slot{
+      width: 100%;
+  }
+  .maps_bloc{
+      float: left;
+      width: 100%;
+      background-color: gray;
+      height: 300px;
+  }
+  .slots_bloc{
+      float: left;
+       width: 100%;
+       height: auto;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  .calender_bloc{
+      margin-top: 15px;
+      height: auto;
+      width: 100%;
+      min-height: 170px;
+      
+  }
+  .search{
+      width: 100%;
+      height: 40px;
+      float: left;
+      margin-bottom: 10px;
+      margin-right: 10px;
+  }
+  .search_input{
+      width: calc(100% - 50px);
+      height: 40px;
+      float: left;
+  
+  }
+  .search_icon{
+     width: 50px;
+      height: 40px;
+      float: left;
+  }
+  .show_map_radio{
+      width: 50%;
+      margin-left: 0px;
+
+  }
+  .slots_bloc{
+      float: left;
+      width: 100%;
+      height:auto;
+  }
+  .maps_bloc{
+      float: left;
+      width: 100%;
+      background-color: gray;
+      height: 300px;
+      margin-bottom:15px;
+  }
+  .slot{
+      margin-left: 0px;
+  }
+
+  .place_bloc select{
+      width: 100%;
+      margin-right:10px;
+      height: 40px;
+      margin-bottom: 20px;
+  
+  }
+  
+  .place_bloc input[type="button"]{
+      width: 100%;
+      height: 40px;
+      background-color: #6AA478;
+      color: white;
+      border: none;
+      outline:none;
+      font-size: 14px;
+      font-weight: bold;
+  }
+}
+
+
